@@ -1,0 +1,166 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+ 
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    background-color: black;
+    color: white;
+    padding-left:  20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* start header  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+} 
+header a img.logo{
+    width: 3vw;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li {
+    margin:5px;
+    padding: 5px;
+}
+/* end header  */
+/* ----------------------------------------- */
+
+/* start home  */
+div.container .content{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    
+}
+div.container .content .write{
+    display: flex;
+    width: 550px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+div.container .content .write button{
+    padding: 5px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border:none;
+   
+}
+div.container .content .write button:hover{
+transform: scale(0.9);
+transition: 700ms;
+}
+ 
+div.image {
+    width: 230px;
+    height: 400px;
+}
+div.image .img{
+    width: 100%;
+    height: 90%;
+}
+div.strip{
+    display: flex;
+    justify-content: center;
+}
+div.strip div.cont-img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-basis: 380px;
+    height: 150px;
+
+}
+div.strip img{
+
+    width: 40px;
+    height: 90px;
+    align-items: center;
+}
+div.strip img:hover{
+    transition:700ms;
+    transform: scale(0.9);
+}
+
+/* end home  */
+@media (max-width:768px){
+    .logo img {
+        width: 30px;
+    }
+
+}
+@media (max-width:430px){
+    .container{
+        display: grid;
+    }
+
+ .logo img {
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+ }
+ 
+    nav ul {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        padding: 5px;
+        width: 300px;
+     
+    }
+    nav ul li a {
+
+        padding: 5px;
+    }
+    div.content{
+    display: flex;
+    /* grid-template-columns: 1fr; */
+    flex-wrap: wrap;
+   }
+    div.content .write {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    /* grid-template-columns: 1fr; */
+   }
+   div .image {
+    width: 150px;
+    height: 250px;
+   }
+   .strip .cont-img{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100vw;
+   height: 60vh;
+   justify-content: center;
+     
+    align-items: center;
+ 
+
+   }
+   .strip .cont-img img{
+    width: 40px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+}
